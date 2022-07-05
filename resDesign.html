@@ -1,0 +1,286 @@
+<!DOCTYPE>
+<html lang="en">
+<head><title>Responsive image gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<style>
+*{
+margin: 0;
+padding: 0;
+font-family: poppins;
+box-sizing: border-box;
+}
+header{
+width: 100%;
+height: auto;
+background-color: #E7E9EB;
+line-height: 2.0;
+}
+header h2{
+text-align: center;
+}
+.topnav, nav{
+width: 100%;
+height: auto;
+background-color: #282A35;
+color: #FFF4A3;
+top: 0;
+position: sticky;
+}
+.topnav nav ul{
+margin: 0;
+padding: 0;
+list-type: none;
+text-align: center;
+}
+.topnav nav ul li, a{
+display: inline-block;
+text-decoration: none;
+padding: 4px;
+}
+.topnav nav ul li a:link{
+color: white;
+}
+.topnav nav ul li:hover{
+background-color: black;
+}
+.topnav nav ul li a:visited{
+color: white;
+}
+@media only screen and (max-width: 400px){
+    .topnav nav ul li, a{
+    font-size: 4vw;
+    padding: 2px;
+    }
+}
+@media only screen and (max-width: 215px){
+    .topnav nav ul li, a{
+    font-size: 3.5vw;
+    padding: 2px;
+    }
+}
+@media only screen and (max-width: 173px){
+    .topnav nav ul li, a{
+    font-size: 3vw;
+    padding: 1px;
+    }
+}
+/***************/
+.image-gallery{
+text-align: center;
+padding: 8px;
+font-size: 22px;
+}
+.gallery{
+width: 100%;
+height: auto;
+border: 1px solid #ccc;
+text-align: center;
+font-size: 14px;
+}
+.gallery img{
+width: 100%;
+height: auto;
+}
+.gallery:hover{
+border: 1px solid grey;
+}
+.gallery-container{
+width: 25%;
+height: auto;
+float: left;
+padding: 6px;
+}
+@media only screen and (max-width: 700px){
+	.gallery-container{
+    	width: 50%;
+    }
+    .image-gallery{
+    font-size: 20px;
+    }
+    .w-container{
+    font-size: 20px;
+    }
+}
+@media only screen and (max-width: 500px){
+	.gallery-container{
+    	width: 100%;
+        margin: 4px 0;
+    }
+    .image-gallery{
+    font-size: 18px;
+    }
+    .w-container{
+    font-size: 18px;
+    }
+}
+.clearfix:after{
+content: "";
+clear: both;
+display: table;
+}
+.w-container{
+width: 100%;
+height: auto;
+text-align: center;
+padding: 8px;
+font-size: 22px;
+}
+/****************************/
+.html-container{
+width: 100%;
+height: auto;
+text-align: center;
+padding: 8px;
+background-color: #D9EEE1;
+color: #282A35;
+margin-top: 8px;
+}
+.css-container{
+width: 100%;
+height: auto;
+text-align: center;
+background-color: #FFF4A3;
+color: #282A35;
+padding: 8px;
+}
+.javascript-container{
+width: 100%;
+height: auto;
+text-align: center;
+background-color: #282A35;
+color: white;
+padding: 8px;
+}
+.react-container{
+width: 100%;
+height: auto;
+text-align: center;
+background-color: #EAB1B8;
+color: #282A35;
+padding: 8px;
+}
+.node-container{
+width: 100%;
+height: auto;
+text-align: center;
+background-color: #8BC3C4;
+color: #282A35;
+padding: 8px;
+}
+.l-cont{
+width: 90%;
+margin: auto;
+padding: 24px;
+box-shadow: 2px 2px 4px grey;
+}
+.footer{
+width: 100%;
+background-color: #282A35;
+color: white;
+text-align: center;
+padding: 8px;
+}
+.footer p{
+margin-bottom: 8px;
+}
+.footer i{
+margin: 6px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+	<h2>Logo</h2>
+</header>
+
+<div class="topnav">
+	<nav>
+    	<ul>
+        	<li><a href="#HTML">HTML</a></li>
+            <li><a href="#CSS">CSS</a></li>
+            <li><a href="#JavaScript">JavaScript</a></li>
+            <li><a href="#ReactJS">React</a></li>
+            <li><a href="#NodeJS">NodeJS</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="image-gallery">Image Gallery</div>
+<div class="gallery-container">
+	<div class="gallery">
+    	<a href="#">
+        <img src="https://www.w3schools.com/css/img_5terre.jpg" width="600" height="400">
+        </a>
+        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.</p>
+    </div>
+</div>
+
+<div class="gallery-container">
+	<div class="gallery">
+    	<a href="#">
+        <img src="https://www.w3schools.com/css/img_forest.jpg" width="600" height="400">
+        </a>
+        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.</p>
+    </div>
+</div>
+
+<div class="gallery-container">
+	<div class="gallery">
+    	<a href="#">
+        <img src="https://www.w3schools.com/css/img_lights.jpg" width="600" height="400">
+        </a>
+        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.</p>
+    </div>
+</div>
+
+<div class="gallery-container">
+	<div class="gallery">
+    	<a href="#">
+        <img src="https://www.w3schools.com/css/img_mountains.jpg" width="600" height="400">
+        </a>
+        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.</p>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+
+<!-------------------------------------------------->
+<div class="w-container">Web Development</div>
+<div class="html-container l-cont">
+	<h2>HTML</h2>
+    <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+</div>
+
+<div class="css-container l-cont">
+	<h2>CSS</h2>
+    <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+</div>
+
+<div class="javascript-container l-cont">
+	<h2>JavaScript</h2>
+    <p>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.</p>
+</div>
+
+<div class="react-container l-cont">
+	<h2>React</h2>
+    <p>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.</p>
+</div>
+
+<div class="node-container l-cont">
+	<h2>NodeJS</h2>
+    <p>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser, which was designed to build scalable network applications.</p>
+</div><br>
+
+<div class="footer">
+  <p >&copy Copyright 2022</p>
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-twitter"></i>
+</div>
+
+</body>
+</html>
